@@ -13,7 +13,11 @@ function saveName(text) {
 
 function showName(text) {
   greeting.classList.add(SHOW);
-  greetingText.innerText = `Hello ${text}`;
+
+  const hours = new Date().getHours();
+  if (hours < 12) { greetingText.innerText = `Good morning, ${text}`; }
+  else if (hours < 18) { greetingText.innerText = `Good afternoon, ${text}`; }
+  else { greetingText.innerText = `Good evening, ${text}`; };
 }
 
 function handleSubmit(event) {

@@ -25,12 +25,14 @@ section{
 
 .flex-container{
   display: flex;
+  /* z-index: -1; */
+  /* padding-bottom: 0%; */
 }
 
 .flex-container > div{
   /* overflow-y: scroll; */
   overflow: scroll;
-  max-height: 400px;
+  max-height: 250px;
   background-color: whitesmoke;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   flex: 1;
@@ -68,7 +70,10 @@ h1{
 .js-greetings h4{
   font-size:40px;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 .js-toDoList{
@@ -166,7 +171,7 @@ h1{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: #888; */
+  background: rgb(109, 109, 109);
 }
 
 /* Handle on hover */
